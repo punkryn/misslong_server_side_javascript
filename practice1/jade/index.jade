@@ -1,0 +1,122 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title 궁전나루
+    meta(property='og:title', content='궁전나루')
+    meta(property='og:image', content='/Booksprites_11.png')
+    meta(property='og:url', content='/castlenaru/test')
+    meta(property='og:description', content='궁전 온라인 마켓')
+    meta(property='og:type', content='website')
+    link(rel='shortcut icon', href='css/icon.png', type='image/x-icon')
+    link(rel='stylesheet', type='text/css', href='css/style.css')
+    link(href='bootstrap-3.3.4-dist/css/bootstrap.min.css', rel='stylesheet')
+    script(type='text/javascript').
+      function check(){
+      if(document.search.keyWord.value==''){
+      alert('검색어를 입력하세요');
+      document.search.keyWord.focus();
+      return false;
+      }
+      }
+  body
+    .upmenu
+      nav.navbar.navbar-default(role='navigation')
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-ex1-collapse', <span='')
+            | Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand.easysLogo(href='') Castle Naru
+        #upmenu.collapse.navbar-collapse.navbar-ex1-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='') 공지사항
+            li.dropdown
+              a.dropdown-toggle(href='', data-toggle='dropdown')
+                | 목록
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='') 성
+                li
+                  a(href='') 홍
+                li
+                  a(href='') 구
+                li
+                  a(href='') 어
+            li
+              a(href='') 게시판
+            li
+              a(href='') 자료실
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#') 로그인
+            li
+              a(href='#') 회원가입
+            li
+              a(href='#') 고객센터
+    #headerLogo.container
+      .row
+        .col-md-2
+        .col-md-3
+          a(href='#')
+            img#menu2logo(src='css/logo2.gif')
+        .col-md-4
+          form(name='search', method='get', action='a.jsp', onsubmit='return check()')
+            table(width='200', border='0', align='center')
+              tr
+                td(align='center', valign='bottom')
+                  select#keyfield(name='keyField')
+                    option(value='subject') 통합검색
+                    option(value='writer') 상품이름
+                    option(value='content') 판매자
+                td
+                  input#keyfield2(type='text', size='30', name='keyWord')
+                td
+                  input#keyfield3(type='submit', value='찾기')
+    .top-slide
+      #sellers_merchandise.carousel.slide
+        ol.carousel-indicators
+          li.active(data-target='#sellers_merchandise', data-slide-to='0')
+          li(data-target='#sellers_merchandise', data-slide-to='1')
+          li(data-target='#sellers_merchandise', data-slide-to='2')
+        #test.carousel-inner
+          .item.active
+            img#test1(src='css/i1.jpg')
+            .carousel-caption
+              h1 시험1
+              p price per ratio
+          .item
+            img#test2(src='css/i2.jpg')
+            .carousel-caption
+              h1 시험2
+              p price per ratio
+          .item
+            img#test3(src='css/i4.jpg')
+            .carousel-caption
+              h1 시험3
+              p price per ratio
+        a.left.carousel-control(href='#sellers_merchandise', data-slide='prev')
+          span.icon-prev
+        a.right.carousel-control(href='#sellers_merchandise', data-slide='next')
+          span.icon-next
+    #line
+    br
+    br
+    div
+      #ad4
+        a(href='')
+          img#select_img0(src='css/icon_1-1.gif', alt='icon_1-1', width='200')
+        a(href='')
+          img#select_img1(src='css/icon_2-1.gif', alt='icon_2-1', width='200')
+        a(href='')
+          img#select_img2(src='css/icon_6-2.gif', alt='icon_6-2', width='200')
+        a(href='')
+          img#select_img3(src='css/icon_6-3.gif', alt='icon_6-3', width='200')
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+    script(src='/bootstrap-3.3.4-dist/js/bootstrap.min.js')
+    script(src='js/jquery-3.1.1.main.min.js')

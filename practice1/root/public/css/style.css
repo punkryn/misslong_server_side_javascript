@@ -1,0 +1,55 @@
+#upmenu {
+  margin: 0 auto;
+  width: 1000px;
+}
+#keyfield {
+  margin-bottom: 8px;
+  border: none;
+}
+#menu2logo{
+  height: 50px;
+  bottom: solid;
+}
+#keyfield2{
+  border:none;
+  padding:none;
+  margin-top: 20px;
+}
+#keyfield3{
+  margin-top: 20px;
+}
+.top-slide{
+  margin:0 auto;
+  margin-top:10px;
+  width: 1020px;
+  margin-bottom : 50px;
+  margin-bottom: solid gray;
+}
+/*#test,#test2,#test3 {
+  height: 450px;
+}*/
+#test{
+  height:450px;
+}
+
+#ad4 {
+  margin-left: 226px;
+  margin-right: 220px;
+}
+
+#select_img1{
+  margin-left: 70px;
+}
+#select_img2{
+  margin-left: 70px;
+}
+#select_img3{
+  margin-left: 70px;
+}
+
+#line{
+  height : 10px;
+  border-top : solid gray 2px;
+  margin-left : 226px;
+  margin-right : 220px;
+}
